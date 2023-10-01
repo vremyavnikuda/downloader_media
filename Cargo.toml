@@ -1,0 +1,15 @@
+[package]
+name = "downloader_media"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+serde = { version = "1.0.188", features = ["derive"] }
+reqwest = "0.11.20"
+blocking = "1.4.0"
+tokio = { version = "1.0.0", features = ["rt", "rt-multi-thread", "macros"] }
+actix-web = "4"
+log = "0.4.20"
+env_logger = { version = "0.10.0", features = [] }
